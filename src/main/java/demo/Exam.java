@@ -9,7 +9,7 @@ public class Exam {
         printOddNumbers();
 
         // Example for sum
-        int[] numbers = {1, 2, 3, 4, 5};
+        int[] numbers = {1, 2, 3, 4, 5, 10};
         System.out.println("Sum of numbers array: " + sum(numbers));
 
         // Example for average
@@ -60,9 +60,9 @@ public class Exam {
 
     //write a method that calculates the average of all the numbers in the array
     public static double average(int[] ints) {
-        int sum = sum(ints);        //3
-        int i = sum / ints.length;
-        return i;
+        double sum = sum(ints);                                  //3
+        double average = sum / ints.length;
+        return average;
     }
 
 
@@ -121,8 +121,6 @@ public class Exam {
             return false;
         }
     }
-
-
     //create a method that uses a scanner to accept user's ticket number and then ask for users destination in that order
     // and prints "Now serving customer number <ticket number>. enjoy your trip to <destination>"
     public static void serveCustomer() {
