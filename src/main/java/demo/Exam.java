@@ -31,11 +31,11 @@ public class Exam {
         System.out.println("Number of '" + testChar + "' in \"" + testString + "\": " + countCharacter(testString, testChar));
 
         // Example for isPalindrome
-        String palindrome = "Madam";
+        String palindrome = "racecar";
         System.out.println("\"" + palindrome + "\" is a palindrome: " + isPalindrome(palindrome));
 
         // Example for isLeapYear
-        int year = 2024;
+        int year = 2023;
         System.out.println(year + " is a leap year: " + isLeapYear(year));
     }
 //create a method that only prints odd numbers from 10 down to 1
@@ -59,9 +59,10 @@ public class Exam {
     }
 
     //write a method that calculates the average of all the numbers in the array
-    public static int average(int[] ints) {
+    public static double average(int[] ints) {
         int sum = sum(ints);        //3
-        return sum / ints.length;
+        int i = sum / ints.length;
+        return i;
     }
 
 
@@ -93,15 +94,13 @@ public class Exam {
     //write a method that counts how many times a particular character appears in a string
     public static int countCharacter(String str, char c) {
         int count = 0;
-        for (int i = 0; i < str.length(); i++) {                     //7
+        for (int i = 0; i < str.length(); i++) {                 //7
             if (str.charAt(i) == c) {
                 count++;
             }
         }
         return count;
     }
-
-
     //create a method that determines if a string is a palindrome
     public static boolean isPalindrome(String str) {
         str = str.toLowerCase();
